@@ -8,4 +8,6 @@
   enterTest = ''
     jsonnet tests/all.jsonnet
   '';
+
+  scripts.fmt.exec = "${lib.getExe pkgs.tanka} fmt .";
 }
