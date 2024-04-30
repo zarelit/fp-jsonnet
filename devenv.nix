@@ -9,5 +9,6 @@
     jsonnet tests/all.jsonnet
   '';
 
+  env.JSONNET_PATH = "lib";
   scripts.fmt.exec = "${lib.getExe pkgs.tanka} fmt .";
 }

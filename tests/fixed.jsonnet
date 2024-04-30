@@ -1,4 +1,4 @@
-local f = import '../lib/fixed.libsonnet';
+local f = import 'fixed.libsonnet';
 {
   almostFib:: function(f) function(n) if n < 2 then n else f(n - 1) + f(n - 2),
   fib:: f.fix(self.almostFib),
